@@ -126,6 +126,56 @@
         "hungry"
       ],
       "id": "12"
+    },
+    {
+      "name": "Matilda",
+      "species": "Feline",
+      "diet": "carnivore",
+      "personalityTraits": [],
+      "id": "13"
+    },
+    {
+      "name": "Matilda",
+      "species": "Feline",
+      "diet": "carnivore",
+      "personalityTraits": [],
+      "id": "13"
+    },
+    {
+      "name": "Matilda",
+      "species": "Canine",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Matilda",
+      "species": "Canine",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "15"
+    },
+    {
+      "name": "Matilda",
+      "species": "Dog",
+      "diet": "herbivore",
+      "personalityTraits": [
+        "hungry"
+      ],
+      "id": "17"
+    },
+    {
+      "name": "Matilda",
+      "species": "Dog",
+      "diet": "carnivore",
+      "personalityTraits": [
+        "anxious"
+      ],
+      "id": "18"
     }
   ]
 }

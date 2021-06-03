@@ -11,6 +11,16 @@ const PORT = process.env.PORT || 3001;
 app.use(express.urlencoded({ extended: true }));
 app.use(express.json());
 
+// Set local explicit routes for front-end files
+app.use(express.static('public'));
+
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/index.html'));
+});
+
+app.get('/animals', (req, res) => {
+    res.sendFile(path.join(__dirname, './public/animals.html'));
+});
 
 app.get('/api/animals', (req, res) => {
     let results = animals;
@@ -35,11 +45,9 @@ app.post('/api/animals', (req, res) => {
     if (!validateAnimal(req.body)){
         res.status(400).send('The animal is not properly formatted');
     } else {
-        const animal = createNewAnimal(req.body, animals);
+        let animal = createNewAnimal(req.body, animals);
         res.json(animal);
     }
-    let animal = createNewAnimal(req.body, animals);
-    res.json(animal);
 });
 
 function filterByQuery(query, animalsArray) {
