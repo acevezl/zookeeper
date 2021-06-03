@@ -176,6 +176,18 @@
         "anxious"
       ],
       "id": "18"
+    },
+    {
+      "name": "Stella",
+      "species": "Dog",
+      "diet": "omnivore",
+      "personalityTraits": [
+        "hungry",
+        "zany",
+        "loving",
+        "goofy"
+      ],
+      "id": "19"
     }
   ]
 }
